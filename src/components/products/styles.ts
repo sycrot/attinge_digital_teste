@@ -21,6 +21,7 @@ export const ProductContents = styled.div`
     width: 1100px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
   }
 `
