@@ -134,8 +134,10 @@ export const BoardContentImage = styled.div`
   }
 
   @media screen and (min-width: 1280px){
+    margin-top: 16px;
     img {
       width: 644px;
+      position: relative;
     }
   }
 `
@@ -151,7 +153,7 @@ export const AdBoard = styled.div`
 
   @media screen and (min-width: 1280px){
     height: 180px;
-    margin-top: -70px;
-    margin-left: -2%;
+    margin-top: -60px;
+    margin-left: -1%;
   }
 `
