@@ -7,6 +7,10 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1280px){
+    margin-top: 150px;
+  }
 `
 
 export const AppsContents = styled.div`
@@ -33,6 +37,7 @@ export const AppsImage = styled.div`
   @media screen and (min-width: 1280px){
     img {
       width: 476px;
+      margin-top: -50px;
     }
     
   }

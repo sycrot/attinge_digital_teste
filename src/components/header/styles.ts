@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 100%;
   background: transparent linear-gradient(154deg, #0096BE 0%, #641EB4 100%) 0% 0%;
   padding-top: 50px;
-  font-family: 'Lato', sans-serif;
   position: relative;
   overflow: hidden;
 
