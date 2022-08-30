@@ -2,9 +2,19 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  display: grid;
   margin-top: 80px;
   padding: 0 15px;
+
+  display: flex;
+  justify-content: center;
+`
+
+export const PanelContents = styled.div`
+  display: grid;
+
+  @media screen and (min-width: 1280px){ 
+    width: 1100px;
+  }
 `
 
 export const Texts = styled.div`
@@ -20,6 +30,12 @@ export const Texts = styled.div`
     line-height: 48px;
     letter-spacing: 1px;
     color: #641EB4;
+  }
+
+  @media screen and (min-width: 1280px){ 
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
   }
 `
 
@@ -42,5 +58,14 @@ export const Image = styled.div`
 
   img {
     width: 100%;
+  }
+
+  @media screen and (min-width: 1280px){ 
+    grid-column: 2;
+    grid-row: 1;
+
+    img {
+      width: 720px;
+    }
   }
 `

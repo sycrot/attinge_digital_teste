@@ -4,6 +4,9 @@ export const Container = styled.div`
   width: 100%;
   margin-top: 100px;
   padding: 0 15px;
+
+  display: flex;
+  justify-content: center;
 `
 
 export const AppsContents = styled.div`
@@ -11,6 +14,12 @@ export const AppsContents = styled.div`
   background: #641EB4;
   border-radius: 10px;
   padding: 0 10px 60px 10px;
+
+  @media screen and (min-width: 1280px){
+    width: 1100px;
+    display: flex;
+    padding: 0 70px 50px 70px;
+  }
 `
 
 export const AppsImage = styled.div`
@@ -19,6 +28,13 @@ export const AppsImage = styled.div`
   img {
     margin-top: -30px;
     width: 100%;
+  }
+
+  @media screen and (min-width: 1280px){
+    img {
+      width: 476px;
+    }
+    
   }
 `
 
@@ -33,6 +49,10 @@ export const AppsTexts = styled.div`
     font-size: 40px;
     font-weight: 900;
     letter-spacing: 1px;
+  }
+
+  @media screen and (min-width: 1280px){
+    margin-left: 20px;
   }
 `
 

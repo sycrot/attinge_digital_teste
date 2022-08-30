@@ -4,6 +4,9 @@ export const Container = styled.div`
   width: 100%;
   margin-top: 35px;
   padding: 0 16px;
+
+  display: flex;
+  justify-content: center;
 `
 
 export const BoardContent = styled.div`
@@ -12,6 +15,10 @@ export const BoardContent = styled.div`
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 0 20px #00000029;
+
+  @media screen and (min-width: 1280px){
+    width: 1100px;
+  }
 `
 
 export const Title = styled.h2`

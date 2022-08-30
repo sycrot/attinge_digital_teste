@@ -5,8 +5,24 @@ export const Container = styled.div`
   margin-top: 80px;
   padding: 0 16px;
   display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1280px){
+    
+  }
+`
+
+export const ProductContents = styled.div`
+  display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1280px){
+    width: 1100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 `
 
 export const ProductItem = styled.div`

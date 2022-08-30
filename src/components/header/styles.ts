@@ -7,10 +7,24 @@ export const Container = styled.div`
   font-family: 'Lato', sans-serif;
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 1280px){
+    background: transparent linear-gradient(114deg, #0096BE 0%, #641EB4 100%) 0% 0% no-repeat padding-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const Nav = styled.nav`
-  
+  @media screen and (min-width: 1280px){
+    width: 1100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 export const NavLogo = styled.div`
@@ -27,7 +41,7 @@ export const NavNumber = styled.div`
 
   span {
     color: #fff;
-    font: normal 16px;
+    font-size: 16px;
     margin-left: 0.4em;
     font-weight: 900;
   }
@@ -35,11 +49,30 @@ export const NavNumber = styled.div`
     width: 16px;
     margin-top: 2px;
   }
+
+  @media screen and (min-width: 1280px){
+    span {
+      font-size: 23px;
+    }
+
+    img {
+      width: 23px;
+    }
+  }
 `
 
 export const Board = styled.div`
   margin-top: 21px;
   padding: 0 15px;
+
+  @media screen and (min-width: 1280px){
+    width: 1100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
 `
 
 export const BoardContentTexts = styled.div`
@@ -61,6 +94,14 @@ export const BoardContentTexts = styled.div`
     color: #36155C;
     font-size: 25px;
     letter-spacing: 0.63px;
+  }
+
+  @media screen and (min-width: 1280px){
+    h2 {
+      text-align: left;
+    }
+    align-items: flex-start;
+    text-align: left;
   }
 `
 
@@ -91,6 +132,12 @@ export const BoardContentImage = styled.div`
   img {
     width: 324px;
   }
+
+  @media screen and (min-width: 1280px){
+    img {
+      width: 644px;
+    }
+  }
 `
 
 export const AdBoard = styled.div`
@@ -101,4 +148,10 @@ export const AdBoard = styled.div`
 
   margin-top: -15px;
   margin-left: -10%;
+
+  @media screen and (min-width: 1280px){
+    height: 180px;
+    margin-top: -70px;
+    margin-left: -2%;
+  }
 `

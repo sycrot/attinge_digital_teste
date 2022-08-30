@@ -3,11 +3,18 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   margin-top: 80px;
+
+  @media screen and (min-width: 1280px){
+
+  }
 `
 
 export const FormContact = styled.div`
   background: #0096BE;
   padding: 85px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
     font-size: 40px;
@@ -22,6 +29,12 @@ export const FormContact = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1280px){
+    form {
+      width: 800px;
+    }
   }
 `
 
@@ -67,16 +80,24 @@ export const ButtonSubmit = styled.button`
 `
 
 export const FooterBottom = styled.div`
-  
+  background: #36155C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export const FooterInfo = styled.div`
   width: 100%;
-  background: #36155C;
   padding: 30px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1280px){
+    width: 1100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `
 
 export const ImageLogo = styled.div`
