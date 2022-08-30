@@ -84,6 +84,7 @@ export const BoardContentTexts = styled.div`
     font-size: 45px;
     font-weight: 900;
     letter-spacing: 1.13px;
+    line-height: 54px;
     text-align: center;
     color: #fff;
     margin-bottom: 10px;
@@ -92,6 +93,7 @@ export const BoardContentTexts = styled.div`
   span {
     color: #36155C;
     font-size: 25px;
+    line-height: 30px;
     letter-spacing: 0.63px;
   }
 
