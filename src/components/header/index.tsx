@@ -25,10 +25,6 @@ const Header = () => (
         <img src={ImageBanner} alt="" />
       </C.BoardContentImage>
     </C.Board>
-
-    <C.AdBoard>
-      
-    </C.AdBoard>
   </C.Container>
 )
 

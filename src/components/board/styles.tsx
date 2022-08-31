@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  margin-top: 35px;
+  margin-top: 80px;
   padding: 0 16px;
 
   display: flex;
   justify-content: center;
 
   @media screen and (min-width: 1280px){
-    margin-top:20px;
+    margin-top: 60px;
   }
 `
 

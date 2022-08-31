@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 880px;
-  background: transparent linear-gradient(154deg, #0096BE 0%, #641EB4 100%) 0% 0%;
-  /* background: radial-gradient(circle at bottom, #fefefe 87%, transparent 10%) 0 740px no-repeat, 
-              linear-gradient(114deg, #0096BE 0%, #641EB4 100%); */
+  height: 825px;
+  background: radial-gradient(ellipse at left, #fafafa 70%, transparent 10%) no-repeat scroll 45vw 800px / 100vw 15vh, 
+              radial-gradient(ellipse at right, #fafafa 70%, transparent 10%) no-repeat scroll -45vw 800px / 100vw 15vh,
+              linear-gradient(114deg, #0096BE 0%, #641EB4 100%);
   padding-top: 50px;
   position: relative;
   overflow: hidden;
@@ -13,8 +13,9 @@ export const Container = styled.div`
   @media screen and (min-width: 1280px){
     height: 680px;
 
-    /* background: radial-gradient(circle at bottom, #fefefe 80%, transparent 10%) no-repeat scroll center 480px / 1440px 960px, linear-gradient(114deg, #0096BE 0%, #641EB4 100%); */
-    background: linear-gradient(114deg, #0096BE 0%, #641EB4 100%);
+    background: radial-gradient(ellipse at left, #fafafa 70%, transparent 10%) no-repeat scroll 45vw 590px / 100% 15vh, 
+              radial-gradient(ellipse at right, #fafafa 70%, transparent 10%) no-repeat scroll -45vw 590px / 100% 15vh,
+              linear-gradient(114deg, #0096BE 0%, #641EB4 100%);
 
     display: flex;
     flex-direction: column;
@@ -82,6 +83,7 @@ export const Board = styled.div`
 
 export const BoardContentTexts = styled.div`
   display: flex;
+  height: 350px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -133,7 +135,6 @@ export const BoardContentButton = styled.button`
 `
 
 export const BoardContentImage = styled.div`
-
   margin-top: 56px;
   
   img {
@@ -146,21 +147,5 @@ export const BoardContentImage = styled.div`
       width: 644px;
       position: relative;
     }
-  }
-`
-
-export const AdBoard = styled.div`
-  width: 350%;
-  height: 100vh;
-  background: #fafafa;
-  border-radius: 50% 50% 0 0;
-
-  margin-top: -15px;
-  margin-left: -125%;
-
-  @media screen and (min-width: 1280px){
-    width: 110%;
-    margin-top: -60px;
-    margin-left: 0;
   }
 `

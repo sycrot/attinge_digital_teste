@@ -5,7 +5,7 @@ export const Container = styled.footer`
   margin-top: 80px;
 
   @media screen and (min-width: 1280px){
-
+    margin-top: 100px;
   }
 `
 
