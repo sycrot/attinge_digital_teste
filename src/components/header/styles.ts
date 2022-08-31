@@ -2,13 +2,19 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
+  height: 880px;
   background: transparent linear-gradient(154deg, #0096BE 0%, #641EB4 100%) 0% 0%;
+  /* background: radial-gradient(circle at bottom, #fefefe 87%, transparent 10%) 0 740px no-repeat, 
+              linear-gradient(114deg, #0096BE 0%, #641EB4 100%); */
   padding-top: 50px;
   position: relative;
   overflow: hidden;
 
   @media screen and (min-width: 1280px){
-    background: transparent linear-gradient(114deg, #0096BE 0%, #641EB4 100%) 0% 0% no-repeat padding-box;
+    height: 680px;
+
+    /* background: radial-gradient(circle at bottom, #fefefe 80%, transparent 10%) no-repeat scroll center 480px / 1440px 960px, linear-gradient(114deg, #0096BE 0%, #641EB4 100%); */
+    background: linear-gradient(114deg, #0096BE 0%, #641EB4 100%);
 
     display: flex;
     flex-direction: column;
@@ -144,17 +150,17 @@ export const BoardContentImage = styled.div`
 `
 
 export const AdBoard = styled.div`
-  width: 120%;
-  height: 60px;
+  width: 350%;
+  height: 100vh;
   background: #fafafa;
   border-radius: 50% 50% 0 0;
 
   margin-top: -15px;
-  margin-left: -10%;
+  margin-left: -125%;
 
   @media screen and (min-width: 1280px){
-    height: 180px;
+    width: 110%;
     margin-top: -60px;
-    margin-left: -1%;
+    margin-left: 0;
   }
 `
